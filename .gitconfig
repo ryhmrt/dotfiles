@@ -1,0 +1,26 @@
+[user]
+	name = Ryohei Morita
+	email = 
+[color]
+	diff = auto
+        status = auto
+        branch = auto
+[mergetool "p4merge"]
+	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+	keepTemporaries = false
+	trustExitCode = false
+	keepBackup = false
+[merge]
+	keepBackup = false
+	tool = p4merge
+[alias] 
+	b = branch
+	ci = commit
+	st = status
+	co = checkout
+	f = fetch
+	pr = pull --rebase
+	d = diff
+	dc = diff --color-words
+	l = log
+
