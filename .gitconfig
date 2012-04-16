@@ -1,19 +1,12 @@
 [user]
-	name = Ryohei Morita
-	email = 
+	name = "Ryohei Morita"
+	email = "ryhmrt@gmail.com"
 [color]
+	ui = auto
 	diff = auto
-        status = auto
-        branch = auto
-[mergetool "p4merge"]
-	cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-	keepTemporaries = false
-	trustExitCode = false
-	keepBackup = false
-[merge]
-	keepBackup = false
-	tool = p4merge
-[alias] 
+	status = auto
+	branch = auto
+[alias]
 	b = branch
 	ci = commit
 	st = status
@@ -23,4 +16,11 @@
 	d = diff
 	dc = diff --color-words
 	l = log
-
+[core]
+	excludesfile = /Users/ryhmrt/.gitignore
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

@@ -1,13 +1,10 @@
-# .profile
-
-# MacPorts Installer addition on 2010-06-22_at_15:21:06: adding an appropriate PATH variable for use with MacPorts.
+export PATH=$PATH:~/bin
+export PATH=$PATH:~/Applications/jruby-1.3.1/bin
+export PATH=$PATH:~/projects/rakudo/parrot_install/bin
+export PATH=$PATH:~/Applications/fop-1.0
+export PATH=$PATH:~/Applications/play-1.2.3
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
+
+export MANPATH=/opt/local/share/man:$MANPATH
 
 #export MAVEN_OPTS=-Dfile.encoding=UTF-8
-
-export PATH=/Users/ryhmrt/bin:$PATH:/Users/ryhmrt/.gem/jruby/1.8/bin
-export PATH=$PATH:/Users/ryhmrt/Projects/rakudo/parrot_install/bin
-
-alias ls="ls -F"
-
