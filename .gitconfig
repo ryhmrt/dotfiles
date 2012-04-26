@@ -17,7 +17,7 @@
 	dc = diff --color-words
 	l = log
 [core]
-	excludesfile = /Users/ryhmrt/.gitignore
+	excludesfile = ~/.gitignore
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
